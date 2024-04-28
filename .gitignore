@@ -1,0 +1,22 @@
+# Ignore build directories
+build/
+install/
+log/
+
+# Ignore all logfiles and tempfiles.
+*.log
+*.tmp
+*.temp
+
+# Ignore Python bytecodes
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore all configuration files
+config/
+
+# Ignore package directories
+devel/
+

@@ -1,0 +1,8 @@
+# CaptureFrame.srv
+#Request
+sensor_msgs/Image image
+string topic_name
+---
+# Response
+bool success             
+string message

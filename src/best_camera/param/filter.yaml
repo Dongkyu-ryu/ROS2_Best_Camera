@@ -1,0 +1,9 @@
+noise_publisher:
+  ros__parameters:
+    salt_param: 250
+    pepper_param: 10 
+
+canny_publisher:
+  ros__parameters:
+    thrs1: 600
+    thrs2: 1500

@@ -1,0 +1,9 @@
+# RecordFrame.srv
+# Request
+sensor_msgs/Image image
+string topic_name
+bool start
+---
+# Response
+bool success
+string message
