@@ -1,8 +1,6 @@
 ![IMG_9162](https://github.com/Dongkyu-ryu/ROS2_Best_Camera/assets/162243656/8f1a54c7-7f1c-4d1e-99ef-00d6dd08e59f)
 
-
 # ROS2_Best_Camera
-
 The `ROS2_Best_Camera` is a ROS2 package designed for handling multiple camera inputs, processing images, and managing video stream data.
 
 It supports various functionalities including image capture, video recording, and applying image filters such as canny edge detection and salt&pepper noise.
@@ -10,11 +8,11 @@ It supports various functionalities including image capture, video recording, an
 ![IMG_9163](https://github.com/Dongkyu-ryu/ROS2_Best_Camera/assets/162243656/21e0e483-1811-46fe-afdb-d0f819cabc18)
 
 
+---
 ## How To Use?
 For those of you who are busy, i have prepared instructions for usage first.
 
 Follow these steps to get started with the `ROS2_Best_Camera` package:
-
 
 ### Step 1: Install & Set up
 
@@ -41,5 +39,50 @@ cd ~/best_camera_ws
 sb
 humble
 colcon build
+source install/local_setup.bash
 ```
 
+### Step 2: Running the Camera Node
+To launch the camera node which includes image streaming and basic processing capabilities:
+```ruby
+ros2 launch best_camera camera.launch.py
+```
+Filter Node :
+```ruby
+ros2 launch best_camera filter.launch.py
+```
+
+### Step 3: Activation camera_service_server 
+To use capturing and recording services:
+```ruby
+ros2 run best_camera camera_service_server
+```
+
+### Step 4: Capturing Images
+To capture an image using the provided service:
+```ruby
+ros2 service call /capture best_camera_msgs/srv/CaptureFrame "{topic_name: '/camera'}"
+```
+Also you can use:
+```ruby
+ros2 service call /capture best_camera_msgs/srv/CaptureFrame "{topic_name: '/canny'}"
+ros2 service call /capture best_camera_msgs/srv/CaptureFrame "{topic_name: '/noise'}"
+```
+
+### Step 4 - 1: Recording Videos
+Start and stop video recording by calling the record service:
+
+Start recording
+```ruby
+ros2 service call /record best_camera_msgs/srv/RecordFrame "{start: true, topic_name: '/camera'}"
+```
+Stop recording
+```ruby
+ros2 service call /record best_camera_msgs/srv/RecordFrame "{start: false, topic_name: '/camera'}"
+```
+
+#### You can find images and videos here:
+```ruby
+cd ~/best_camera_ws/captured_images
+cd ~/best_camera_ws/videos
+```
