@@ -28,7 +28,7 @@ alias ros_domain="export ROS_DOMAIN_ID=YOUR OWN DOMAIN NUMBER!"
 ```
 
 Clone the repository :
-```bash
+```ruby
 cd ~
 mkdir -p best_camera_ws/src
 cd ~/best_camera_ws/src
@@ -36,7 +36,7 @@ git clone https://github.com/Dongkyu-ryu/ROS2_Best_Camera.git
 ```
 
 Build the package:
-```bash
+```ruby
 cd ~/best_camera_ws
 sb
 humble
