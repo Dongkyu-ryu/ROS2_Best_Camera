@@ -13,11 +13,21 @@ For those of you who are busy, i have prepared instructions for usage first.
 Follow these steps to get started with the `ROS2_Best_Camera` package:
 
 ### Step 1: Install & Set up
-Clone the repository and build the package:
 
+Before building the package, add below code in your bashrc
+```bash
+alias sb="source ~/.bashrc; echo \"bashrc is reloaded\""
+alias humble="source /opt/ros/humble/setup.bash; ros_domain; echo \"ROS2 humble is activated!\""
+alias ros_domain="export ROS_DOMAIN_ID=YOUR OWN DOMAIN NUMBER!"
+```
+
+Clone the repository :
 ```bash
 cd ~
 mkdir -p best_camera_ws/src
 cd ~/best_camera_ws/src
 git clone https://github.com/Dongkyu-ryu/ROS2_Best_Camera.git
 ```
+
+
+
