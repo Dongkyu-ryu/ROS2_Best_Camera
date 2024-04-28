@@ -5,6 +5,8 @@
 The `ROS2_Best_Camera` is a ROS2 package designed for handling multiple camera inputs, processing images, and managing video stream data.
 It supports various functionalities including image capture, video recording, and applying image filters such as canny edge detection and salt&pepper noise.
 
+![IMG_9163](https://github.com/Dongkyu-ryu/ROS2_Best_Camera/assets/162243656/21e0e483-1811-46fe-afdb-d0f819cabc18)
+
 ## How To Use?
 For those of you who are busy, i have prepared instructions for usage first.
 
