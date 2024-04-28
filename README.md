@@ -11,3 +11,13 @@ It supports various functionalities including image capture, video recording, an
 For those of you who are busy, i have prepared instructions for usage first.
 
 Follow these steps to get started with the `ROS2_Best_Camera` package:
+
+### Step 1: Install & Set up
+Clone the repository and build the package:
+
+```bash
+cd ~
+mkdir -p best_camera_ws/src
+cd ~/best_camera_ws/src
+git clone https://github.com/Dongkyu-ryu/ROS2_Best_Camera.git
+```
