@@ -7,8 +7,13 @@ It supports various functionalities including image capture, video recording, an
 
 ![IMG_9163](https://github.com/Dongkyu-ryu/ROS2_Best_Camera/assets/162243656/21e0e483-1811-46fe-afdb-d0f819cabc18)
 
+---
+## Environment
+<img src="https://img.shields.io/badge/ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"> <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+<img src="https://img.shields.io/badge/opencv-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white"> <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> 
 
 ---
+
 ## How To Use?
 For those of you who are busy, i have prepared instructions for usage first.
 
