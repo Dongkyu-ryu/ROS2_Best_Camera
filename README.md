@@ -1,6 +1,6 @@
 ![IMG_9162](https://github.com/Dongkyu-ryu/ROS2_Best_Camera/assets/162243656/8f1a54c7-7f1c-4d1e-99ef-00d6dd08e59f)
 
-# ROS2_Best_Camera
+# :movie_camera: ROS2_Best_Camera:movie_camera 
 The `ROS2_Best_Camera` is a ROS2 package designed for handling multiple camera inputs, processing images, and managing video stream data.
 
 It supports various functionalities including image capture, video recording, and applying image filters such as canny edge detection and salt&pepper noise.
@@ -8,18 +8,26 @@ It supports various functionalities including image capture, video recording, an
 ![IMG_9163](https://github.com/Dongkyu-ryu/ROS2_Best_Camera/assets/162243656/21e0e483-1811-46fe-afdb-d0f819cabc18)
 
 ---
-## Environment
-<img src="https://img.shields.io/badge/ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"> <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">
-<img src="https://img.shields.io/badge/opencv-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white"> <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> 
+## :computer: Environment 
+<img src="https://img.shields.io/badge/ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"><img src="https://img.shields.io/badge/22.04-515151?style=for-the-badge">
+
+<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"><img src="https://img.shields.io/badge/3.10-515151?style=for-the-badge">
+
+<img src="https://img.shields.io/badge/opencv-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white"><img src="https://img.shields.io/badge/4.9.0-515151?style=for-the-badge">
+
+<img src="https://img.shields.io/badge/ROS_2-Humble-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white">
+
+
+<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> 
 
 ---
 
-## How To Use?
+## :scroll: How To Use? 
 For those of you who are busy, i have prepared instructions for usage first.
 
 Follow these steps to get started with the `ROS2_Best_Camera` package:
 
-### Step 1: Install & Set up
+### Step :one: Install & Set up
 
 Before building the package, add below code in your bashrc
 
@@ -47,7 +55,7 @@ colcon build
 source install/local_setup.bash
 ```
 
-### Step 2: Running the Camera Node
+### Step :two: Running the Camera Node
 To launch the camera node which includes image streaming and basic processing capabilities:
 ```ruby
 ros2 launch best_camera camera.launch.py
@@ -57,13 +65,13 @@ Filter Node :
 ros2 launch best_camera filter.launch.py
 ```
 
-### Step 3: Activation camera_service_server 
+### Step :three: Activation camera_service_server 
 To use capturing and recording services:
 ```ruby
 ros2 run best_camera camera_service_server
 ```
 
-### Step 4: Capturing Images
+### Step :four: Capturing Images
 To capture an image using the provided service:
 ```ruby
 ros2 service call /capture best_camera_msgs/srv/CaptureFrame "{topic_name: '/camera'}"
@@ -74,7 +82,7 @@ ros2 service call /capture best_camera_msgs/srv/CaptureFrame "{topic_name: '/can
 ros2 service call /capture best_camera_msgs/srv/CaptureFrame "{topic_name: '/noise'}"
 ```
 
-### Step 4 - 1: Recording Videos
+### Step :five: Recording Videos
 Start and stop video recording by calling the record service:
 
 Start recording
